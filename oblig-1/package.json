@@ -1,0 +1,14 @@
+{
+	"name": "in3240",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "cypress run"
+	},
+	"author": "FWFWLL",
+	"license": "ISC",
+	"devDependencies": {
+		"cypress": "^12.7.0"
+	}
+}
