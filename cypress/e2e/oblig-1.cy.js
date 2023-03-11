@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-context.skip("Task 1.5", () => {
+context.skip("Task 1.5 - Automated Testing of Customer Care", () => {
 	before(() => {
 		cy.visit("https://parabank.parasoft.com/parabank/contact.htm")
 	});
@@ -20,7 +20,7 @@ context.skip("Task 1.5", () => {
 	});
 });
 
-context("Task 2.5", () => {
+context("Task 2.5 - Automated Testing of Website", () => {
 	const username = "VestiaZetaMyBeloved";
 	const password = "VestiaZetaMyBeloved";
 
@@ -39,15 +39,27 @@ context("Task 2.5", () => {
 		cy.get("a[href=\"/parabank/logout.htm\"]").click();
 	});
 
-	specify("Task 2.5.1 - ", () => {
+	specify.skip("Test 2.5.1 - Open New Account", () => {
+		// Navifate to Open New Account Page
+		cy.get("a[href=\"/parabank/openaccount.htm\"]").click();
 
+		// Select account type
+		cy.get("#type").select(1);
+
+		// Select existing account
+		cy.get("#fromAccountId").select(1);
+
+		// Open New Account
+		cy.get(".button[value=\"Open New Account\"]").click();
+
+		// Expected Result
+		cy.contains("Congratulations, your account is now open.");
 	});
 
-	specify("Test 2.5.2 - ", () => {
-
+	specify("Task 2.5.2 - ", () => {
 	});
 
-	specify("Test 2.5.3 - ", () => {
+	specify.skip("Test 2.5.3 - ", () => {
 
 	});
 });
