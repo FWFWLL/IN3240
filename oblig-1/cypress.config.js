@@ -1,6 +1,6 @@
 import {defineConfig} from "cypress";
 
-module.exports = defineConfig({
+export default defineConfig({
 	e2e: {
 		setupNodeEvents(_on, _config) {},
 	},

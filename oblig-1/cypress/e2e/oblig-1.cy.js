@@ -20,7 +20,7 @@ context.skip("Task 1.5", () => {
 	});
 });
 
-context("Task 2.2", () => {
+context("Task 2.5", () => {
 	const username = "VestiaZetaMyBeloved";
 	const password = "VestiaZetaMyBeloved";
 
@@ -29,7 +29,7 @@ context("Task 2.2", () => {
 
 		// Fill login form
 		cy.get(".input[name=\"username\"]").type(username);
-		cy.get(".input[name=\"passwor\"]").type(password);
+		cy.get(".input[name=\"password\"]").type(password);
 
 		// Log in
 		cy.get(".button[value=\"Log In\"]").click();
@@ -39,15 +39,15 @@ context("Task 2.2", () => {
 		cy.get("a[href=\"/parabank/logout.htm\"]").click();
 	});
 
-	specify("Task 2.2.1 - ", () => {
+	specify("Task 2.5.1 - ", () => {
 
 	});
 
-	specify("Test 2.2.2 - ", () => {
+	specify("Test 2.5.2 - ", () => {
 
 	});
 
-	specify("Test 2.2.3 - ", () => {
+	specify("Test 2.5.3 - ", () => {
 
 	});
 });
